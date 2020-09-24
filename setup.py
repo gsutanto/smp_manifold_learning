@@ -8,7 +8,7 @@ __author__ = "Giovanni Sutanto, Isabel Rayas, Peter Englert, Ragesh Ramachandran
 __copyright__ = "Copyright 2020, Robotic Embedded Systems Laboratory (RESL), USC"
 
 install_requires = [
-    "dill", "matplotlib", "numpy", "pandas", "plotly", "scipy", 
+    "dill", "matplotlib", "numpy", "pandas", "plotly", "scipy==1.4.1", 
     "smallab==1.3.3", "tensorflow==2.2.0", "torch", "torchvision", "tqdm"
 ]
 dependency_links = [
