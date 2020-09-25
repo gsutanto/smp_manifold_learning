@@ -9,6 +9,7 @@ import torch
 import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 from smp_manifold_learning.motion_planner.feature import SphereFeature, LoopFeature
+from smp_manifold_learning.differentiable_models.utils import create_dir_if_not_exist
 
 
 class RenameUnpickler(dill.Unpickler):
@@ -461,6 +462,7 @@ def full_vae_evaluation_for_dataset(dataset_name,
 
         if do_save_samples:
             print(f"Producing and saving samples from experiment {name}...")
+            create_dir_if_not_exist(saved_samples_folder)
             fname = saved_samples_folder + dataset_name + '_' + name + "_samples.npy"
             samples = np.array([vae.sample() for _ in range(n_samples)])
             np.save(fname, samples)
@@ -468,6 +470,7 @@ def full_vae_evaluation_for_dataset(dataset_name,
             print(
                 f"Producing and saving reconstructed data from experiment {name}..."
             )
+            create_dir_if_not_exist(saved_recon_folder)
             fname = saved_recon_folder + dataset_name + '_' + name + "_recon.npy"
             configs = vae.forward(
                 torch.from_numpy(training_data).float()).detach().numpy()
