@@ -13,6 +13,8 @@ smp_manifold_learning/plot/**/*.pth
 smp_manifold_learning/plot/**/*.html
 smp_manifold_learning/scripts/**/*.pth
 smp_manifold_learning/scripts/experiment_runs/
+smp_manifold_learning/scripts/reconstruction/
 smp_manifold_learning/scripts/recon_data/
+smp_manifold_learning/scripts/samples/
 smp_manifold_learning/scripts/plots/
 smp_manifold_learning/sklearn/data/
