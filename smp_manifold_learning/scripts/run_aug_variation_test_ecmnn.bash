@@ -74,7 +74,7 @@ for manifold_id in 1; do  #"${!manifold[@]}"; do
     fi
     for bt in {1..7}; do
       aug_dataloader_save_dir="$(printf "../plot/ecmnn/${manifold[$manifold_id]}/${expmode[$expmode_id]}$bt/")"
-      for randseed in {0..2..1}; do
+      for randseed in {0..2}; do
         save_dir="$(printf "${aug_dataloader_save_dir}/r%02d/" $randseed)"
         printf "Logging in directory %s\n" $save_dir
         python create_dir_if_not_exist.py -d $save_dir

@@ -72,7 +72,7 @@ for manifold_id in "${!manifold[@]}"; do
       bn=0
       bm=${expmode[$expmode_id]}
     fi
-    for randseed in {0..2..1}; do
+    for randseed in {0..2}; do
       aug_dataloader_save_dir="$(printf "../plot/ecmnn/${manifold[$manifold_id]}/${expmode[$expmode_id]}/")"
       save_dir="$(printf "${aug_dataloader_save_dir}/r%02d/" $randseed)"
       printf "Logging in directory %s\n" $save_dir
