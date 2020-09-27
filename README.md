@@ -1,6 +1,7 @@
 # smp_manifold_learning
 
 Paper: [https://arxiv.org/abs/2009.11852](https://arxiv.org/abs/2009.11852)
+
 Video: [https://www.youtube.com/watch?v=WoC7nqp4XNk](https://www.youtube.com/watch?v=WoC7nqp4XNk)
 
 ## Installation
@@ -23,7 +24,7 @@ The implementation of ECoMaNN can be found in 'smp_manifold_learning/differentia
 The implementation of Orthogonal Subspace Alignment (OSA) can be found in 'smp_manifold_learning/orthogonal_subspace_alignment/iosa.py'.
 
 The script that was used for the ablation study in the paper is 'smp_manifold_learning/scripts/run_ablation_test_ecmnn.bash'.
-After the execution of the script is completed, there is manual selection of best models for each random seed. For example we can pick the best model in 'smp_manifold_learning/plot/ecmnn/3Dsphere/normal/r00/' by observing the file 'smp_manifold_learning/plot/ecmnn/3Dsphere/normal/r00/log.txt' and pick the iteration that has minimum losses. Suppose that is the i-th iteration (i >= 1). Then we need to copy 'smp_manifold_learning/plot/ecmnn/3Dsphere/normal/r00/model_3d_sphere_epoch&lti-1&gt.pth' file into 'smp_manifold_learning/plot/ecmnn/3Dsphere/normal/r00/best/model_3d_sphere.pth' file. We need to this for each random seed.
+After the execution of the script is completed, there is manual selection of best models for each random seed. For example we can pick the best model in 'smp_manifold_learning/plot/ecmnn/3Dsphere/normal/r00/' by observing the file 'smp_manifold_learning/plot/ecmnn/3Dsphere/normal/r00/log.txt' and pick the iteration that has minimum losses. Suppose that is the i-th iteration (i >= 1). Then we need to copy 'smp_manifold_learning/plot/ecmnn/3Dsphere/normal/r00/model_3d_sphere_epoch\<i-1\>.pth' file into 'smp_manifold_learning/plot/ecmnn/3Dsphere/normal/r00/best/model_3d_sphere.pth' file. We need to this for each random seed.
 Once done, we can run the projection evaluation function:
 ```
 cd smp_manifold_learning/scripts/
