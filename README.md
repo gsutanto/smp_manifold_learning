@@ -1,8 +1,18 @@
 # smp_manifold_learning
 
-Paper: [https://arxiv.org/abs/2009.11852](https://arxiv.org/abs/2009.11852)
+Paper: [Learning Equality Constraints for Motion Planning on Manifolds](https://arxiv.org/abs/2009.11852)
 
 Video: [https://www.youtube.com/watch?v=WoC7nqp4XNk](https://www.youtube.com/watch?v=WoC7nqp4XNk)
+
+Citation:
+```
+@inproceedings{sutanto2020corl,
+	Title = {Learning Equality Constraints for Motion Planning on Manifolds},
+	Author = {Giovanni Sutanto and Isabel M. Rayas Fern{\'a}ndez and Peter Englert and Ragesh K. Ramachandran and Gaurav S. Sukhatme},
+	Booktitle = {Conference on Robot Learning},
+	Year = {2020}
+}
+```
 
 ## Installation
 ```
